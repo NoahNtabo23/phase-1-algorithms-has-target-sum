@@ -1,13 +1,27 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for (let num of array){
+    const difference=target-num
+    if(difference===0){
+      return true
+    }else{
+      return false
+    }
+  }
+
+
 }
+
 
 /* 
   Write the Big O time complexity of your function here
+  The Big O complexity for the function is O(n).This is because in the worst case scenario we have to iterate through all elements in the array to find a pair that matches.
+
 */
 
 /* 
   Add your pseudocode here
+
+
 */
 
 /*
