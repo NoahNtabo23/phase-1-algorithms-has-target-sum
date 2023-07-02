@@ -1,15 +1,15 @@
 function hasTargetSum(array, target) {
-  for (let num of array){
-    const difference=target-num
-    if(difference===0){
-      return true
-    }else{
-      return false
+  //iterate through each number in the array
+  for (let i = 0; i < array.length - 1; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] + array[j] === target) {
+        return true;
+      }
     }
   }
-
-
+  return false;
 }
+
 
 
 /* 
